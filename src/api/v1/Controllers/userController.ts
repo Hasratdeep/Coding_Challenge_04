@@ -18,9 +18,10 @@ export const getUserProfile = (
         const userId: string = res.locals.uid;
 
         if (!userId) {
-            return res.status(HTTP_STATUS.UNAUTHORIZED).json({
+            res.status(HTTP_STATUS.UNAUTHORIZED).json({
                 error: "User not authenticated",
             });
+            return;
         }
 
         res.status(HTTP_STATUS.OK).json({
@@ -49,9 +50,10 @@ export const deleteUser = (
         const currentUserRole: string = res.locals.role;
 
         if (!currentUserRole) {
-            return res.status(HTTP_STATUS.FORBIDDEN).json({
+            res.status(HTTP_STATUS.FORBIDDEN).json({
                 error: "User role not found",
             });
+            return 
         }
 
         res.status(HTTP_STATUS.OK).json({
