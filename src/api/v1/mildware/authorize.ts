@@ -56,3 +56,5 @@ const isAuthorized = (opts: AuthorizationOptions): MiddlewareFunction => {
     };
 };
 export default isAuthorized;
+
+
