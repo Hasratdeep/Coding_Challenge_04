@@ -21,7 +21,7 @@ export const getUserProfile = (
             res.status(HTTP_STATUS.UNAUTHORIZED).json({
                 error: "User not authenticated",
             });
-            return;
+            return 
         }
 
         res.status(HTTP_STATUS.OK).json({
