@@ -1,4 +1,4 @@
-import { api } from "./utils/testSetup";
+import { api } from "./testSetup";
 
 describe("Authorization Middleware", () => {
   test("should deny access if user role is not admin", async () => {

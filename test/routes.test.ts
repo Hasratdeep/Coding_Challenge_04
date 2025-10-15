@@ -1,4 +1,4 @@
-import { api } from "./utils/testSetup";
+import { api } from "./testSetup";
 
 describe("Routes Integration", () => {
   test("GET /api/v1/users/profile returns user data", async () => {
