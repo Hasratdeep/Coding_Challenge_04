@@ -5,7 +5,9 @@
     "main": "dist/server.js",
     "scripts": {
         "start": "ts-node src/server.ts",
-        "test": "jest"
+        "test": "jest --runInBand",
+        "test:watch": "jest --watch"
+        
     },
     "dependencies": {
         "express": "^5.1.0",
